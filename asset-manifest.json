@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/gridnine-systems_test/static/css/main.a23f0644.css",
+    "main.js": "/gridnine-systems_test/static/js/main.af067e2a.js",
+    "static/js/787.9f42b58f.chunk.js": "/gridnine-systems_test/static/js/787.9f42b58f.chunk.js",
+    "static/media/airline.png": "/gridnine-systems_test/static/media/airline.72cfa19d98f296f0636f.png",
+    "static/media/clock.png": "/gridnine-systems_test/static/media/clock.45b0736b20ad251e6cdb.png",
+    "index.html": "/gridnine-systems_test/index.html",
+    "main.a23f0644.css.map": "/gridnine-systems_test/static/css/main.a23f0644.css.map",
+    "main.af067e2a.js.map": "/gridnine-systems_test/static/js/main.af067e2a.js.map",
+    "787.9f42b58f.chunk.js.map": "/gridnine-systems_test/static/js/787.9f42b58f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a23f0644.css",
+    "static/js/main.af067e2a.js"
+  ]
+}
