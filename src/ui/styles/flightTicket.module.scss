@@ -1,0 +1,115 @@
+.descDirection {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+
+  .uid {
+    color: #4c7cff;
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+.directionWrap {
+
+  span:not(:first-child) {
+    margin: 0 3px;
+  }
+}
+
+.desc {
+  padding: 20px;
+  border-bottom: 2px solid #5987fd;
+}
+
+.arrow {
+  margin: 0 15px;
+
+  @media (max-width: 500px) {
+    transform: rotate(90deg)
+  }
+}
+
+.descTime {
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    width: 80%;
+    height: 1px;
+    background-color: gray;
+    transform: translateX(-50%);
+  }
+
+  .transfer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    font-size: 18px;
+    background-color: rgb(250, 250, 250);
+    color: rgb(255, 173, 65);
+    padding: 0 10px;
+  }
+}
+
+.descTimeWrap {
+  display: flex;
+  margin: 10px 0;
+  font-size: 20px;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+
+.departureDate {
+  span:first-child {
+    margin-right: 5px;
+  }
+
+  span:last-child {
+    color: #3566ff;
+  }
+
+}
+
+.arrivalDate {
+  span:first-child {
+    color: #3566ff;
+    margin-right: 5px;
+  }
+}
+
+.duration {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 500px) {
+    margin: 10px auto;
+  }
+}
+
+.flightOperator {
+  font-size: 18px;
+  padding-top: 15px;
+}

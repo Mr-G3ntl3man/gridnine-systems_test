@@ -1,0 +1,117 @@
+.container {
+  padding: 0 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 0.3s ease-in-out;
+
+  &.loading {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.column {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+
+.leftColumn {
+  flex: 0 0 22%;
+  position: fixed;
+
+  @media (max-width: 1000px) {
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 760px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.rightColumn {
+  flex: 0 0 70%;
+  margin-left: auto;
+
+  @media (max-width: 1000px) {
+    margin-left: 0;
+  }
+}
+
+.sortTitle, .filterTitle, .priceTitle, .airlinesTitle {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sort, .filter, .price {
+  margin-bottom: 20px;
+}
+
+.priceInput {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+
+  input {
+    margin-left: 10px;
+    width: 150px;
+  }
+}
+
+.airlinesInput {
+  margin: 5px 0;
+
+  label {
+    cursor: pointer;
+
+    .caption {
+      display: inline-block;
+      width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .airlinesPrice {
+      margin-left: 5px;
+    }
+  }
+}
+
+.radio {
+  label {
+    cursor: pointer;
+  }
+}
+
+.notFound {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.showMore {
+  display: block;
+  background-color: gray;
+  outline: none;
+  border: none;
+  margin: 20px auto;
+  font-size: 18px;
+  height: 40px;
+  padding: 0 30px;
+  cursor: pointer;
+  color: #fff;
+}
