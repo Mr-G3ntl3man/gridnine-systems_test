@@ -20,6 +20,14 @@ const initialState: InitialStateT = {
    },
 }
 
+export const setDataAndOptions = createAsyncThunk(
+   'app/setDataOptions',
+   (payload: { data: DataT, limit?: number }, {dispatch}) => {
+      dispatch(appSlice.actions.setData({data: payload.data, limit: payload.limit}))
+      dispatch(appSlice.actions.setOptions())
+   }
+)
+
 export const filterFlightsCard = createAsyncThunk(
    'app/filterFlightsCard',
    (action: ActionT, {dispatch}) => {
